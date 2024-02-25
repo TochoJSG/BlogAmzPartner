@@ -1,0 +1,640 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<meta http-equiv="X-UA-Compatible" content="ie=edge"/>-->
+	<title>Blog Minimalista</title>
+	<!--<link rel="stylesheet" href="estilo_cards.css"/>-->
+	<style>
+	/*@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');*/
+	*{
+		box-sizing:border-box;
+		margin:0;
+		padding:0;
+		font-family:'Poppins',sans-serif;
+		scroll-behavior:smooth;
+	}
+	body{
+		/*justify-content:center;
+		align-items:center;
+		min-height:150vh;*/
+		background:#f8f8f8;
+		width:100%;
+		overflow-x:hidden;
+	}
+	:root{
+		--black:#040105;/*#333*/
+		--white:#fff;
+	}
+	header{
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		padding:20px 100px;
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+		background:var(--white);
+		z-index:1000;
+		border-bottom:1px solid rgba(0,0,0,0.06);
+		transiton:0.6s;
+	}
+	header.sticky{
+		padding:10px 100px;
+	}
+	.logo{
+		position:relative;
+		display:inline-block;
+		color:var(--black);
+		text-decoration:none;
+		font-size:1.5em;
+		font-weight:500;
+		text-transform:uppercase;
+		letter-spacing:3px;
+	}
+	.menuToggle{
+		position:relative;
+		width:33px;
+		height:33px;
+		background:url(menu.png);
+		background-size:33px;
+		background-repeat:no-repeat;
+		background-position:center;
+		cursor:pointer;
+	}
+	.menuToggle.active{
+		background:url(clase.png);
+		background-size:25px;
+		background-repeat:no-repeat;
+		background-position:center;
+		cursor:pointer;
+	}
+	.navigation{
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		height:100vh;
+		background:var(--white);
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		flex-direction:column;
+		z-index:999;
+		transiton:0.25s;
+		opacity:0;
+		visibility:hidden;
+	}
+	.navigation.active{
+		opacity:1;
+		visibility:visible;
+	}
+	.navigation li{
+		list-style:none;
+		margin:10px 0;
+	}
+	.navigation li a{
+		color:var(--black);
+		text-decoration:none;
+		font-size:1.3em;
+		letter-spacing:8px;
+		display:inline-block;
+		font-weight:600;
+		text-transform:uppercase;
+	}
+	section{
+		position:relative;
+		padding:100px;
+		width:100%;
+		min-height:100vh;
+		background:var(--white);
+		animation-name:colorido;animation-duration:6.666s;
+	}
+	.cover{
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		object-fit:cover;
+	}
+	.banner{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	.banner .contentBx{
+		position:relative;
+		z-index:1;
+		background:var(--white);
+		padding:66px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		flex-direction:column;
+	}
+	.banner .contentBx h4{
+		font-size:2em;
+		font-weight:600;
+		color:var(--black);
+		letter-spacing:3px;
+		text-align:center;
+		text-transform:uppercase;
+	}
+	.banner .contentBx h1{
+		font-size:1.5em;
+		font-weight:500;
+		color:var(--black);
+		letter-spacing:6px;
+		text-align:center;
+		text-transform:uppercase;
+	}
+	.btn{
+		position:relative;
+		display:inline-bock;
+		padding:8px 23px;
+		margin-top:16px;
+		border:3px solid var(--black);
+		color:var(--black);
+		text-decoration:none;
+		font-size:1.1em;
+		letter-spacing:3px;
+		font-weight:300;
+		text-transform:uppercase;
+		transition:0.6s;
+	}
+	.btn:hover{
+		opacity:1;
+		color:var(--white);
+		background:var(--black);
+	}
+	.title{
+		width:100%;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		flex-direction:column;
+	}
+	.title h2{
+		position:relative;
+		font-weight:500;
+		letter-spacing:3px;
+		font-size:1.3em;
+		text-transform:uppercase;
+		color:var(--black);
+	}
+	.title h2:before{
+		content:'';
+		position:absolute;
+		bottom:-9px;
+		left:50%;
+		transform:translateX(-50%);
+		width:40px;
+		height:6px;
+		background:var(--black);
+	}
+	.title p{
+		margin-top:33px;
+		max-width:700px;
+		text-align:center;
+	}
+	p{
+		color:var(--black);
+		font-weight:300;
+		text-align:justify;
+	}
+	.about .contentBx{
+		position:relative;
+		margin-top:40px;
+		display:grid;
+		grid-template-columns:1fr 1fr;
+		grid-gap:23px;
+	}
+	.about .contentBx .content{
+		position:relative;
+	}
+	/*.about .contentBx .content .imgBx{
+		min-height:415px;
+	}*/
+	.post{
+		position:relative;
+	}
+	.post .contentBx{
+		position:relative;
+		display:grid;
+		grid-template-columns:1fr 1fr 1fr;
+		grid-gap:23px;
+		margin-top:16px;
+	}
+	.post .contentBx .postColumn{
+		position:relative;
+	}
+	.post .contentBx .postColumn .postBox{
+		position:relative;
+		width:100%;
+		height:400px;
+		margin-top:23px;
+	}
+	.post .contentBx .postColumn .postBox.extraHeight{
+		height:600px;
+	}
+	.post .contentBx .postColumn .postBox .txtBx{
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background:var(--white);
+		padding:16px;
+		display:flex;
+		justify-content:flex-end;
+		align-items:flex-start;
+		flex-direction:column;
+		transition:0.666s;
+		opacity:0;
+		visibility:hidden;
+	}
+	.post .contentBx .postColumn .postBox:hover .txtBx{
+		opacity:0.66;
+		visibility:visible;
+	}
+	.post .contentBx .postColumn .postBox .txtBx h3{
+		font-weight:300;
+		font-size:1em;
+		letter-spacing:3px;
+		color:var(--black);
+	}
+	.post .contentBx .postColumn .postBox .txtBx .btn{
+		padding:6px 9px;
+		background:var(--black);
+		color:var(--white);
+		font-weight:300;
+		font-size:1em;
+	}
+	.mgt60{
+		margin-top:60px;
+	}
+	.contact{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		flex-direction:column;
+	}
+	.contact .contactForm{
+		position:relative;
+		width:100%;
+		max-width:700px;
+		margin-top:23px;
+	}
+	.contact .contactForm .row{
+		width:100%;
+		display:grid;
+		grid-template-columns:repeat(2,1fr);
+		grid-gap:23px;
+		margin-top:16px;
+	}
+	.contact .contactForm .row input,
+	.contact .contactForm .row2 textarea{
+		width:100%;
+		padding:8px;
+		border:1px solid var(--black);
+		outline:none;
+		background:var(--white);
+		color:var(--black);
+		font-size:1.1em;
+		font-weight:500;
+		text-transform:uppercase;
+		letter-spacing:3px;
+	}
+	.contact .contactForm .row2{
+		width:100%;
+		display:flex;
+		margin-top:16px;
+		justify-content:center;
+		align-items:center;
+	}
+	.contact .contactForm .row2 textarea{
+		resize:none;
+		height:415px;
+	}
+	::placeholder{
+		color:var(--black);
+	}
+	.contact .contactForm .row2 input[type="submit"]{
+		background:var(--white);
+		color:var(--black);
+		border:2px solid var(--black);
+		cursor:pointer;
+	}
+	.contact .contactForm .row2 input[type="submit"]:hover{
+		background:var(--black);
+		color:var(--white);
+	}
+	footer{
+		padding:100px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		flex-direction:column;
+		background:#daf;
+		border-box:1px solid rgba(0,0,0,0.06);
+	}
+	footer .footerMenu{
+		display:flex;
+	}
+	footer .footerMenu li{
+		list-style:none;
+	}
+	footer .footerMenu li a{
+		display:inline-block;
+		text-decoration:none;
+		margin:23px;
+		color:#232f3e;
+		text-transform:uppercase;
+		letter-spacing:3px;
+		font-weight:300;
+	}
+	footer .footerMenu li a:hover{
+		transition:.8s;
+		transform:translateY(-8px);
+	}
+	.copyrightText{
+		color:var(--black);
+		font-weight:600;
+		font-size:1.2em;
+		padding:16px;
+		text-align:center;
+		letter-spacing:8px;
+		margin-top:25px;
+	}
+	.aletarga{
+		opacity:0;
+		transform:scale(0.5);
+		transition:1s ease-in-out all;
+	}
+	.aletarga.visible{
+		opacity:1;
+		transform:scale(1) translateX(0);
+	}
+	@media(max-width:991px){
+		header{
+			padding:20px 20px;
+		}
+		header .sticky{
+			padding:10px 20px;
+		}
+		section{
+			padding:20px;
+		}
+		.banner .contentBx{
+			padding:40px 30px;
+		}
+		.about .contentBx{
+			grid-template-columns:repeat(1,1fr);
+		}
+		.post .contentBx{
+			grid-template-columns:repeat(1,1fr);
+		}
+		.post .contentBx .postColumn .postBox,
+		.post .contentBx .postColumn .postBox.extraHeight{
+			height:300px;
+		}
+		.contact .contactForm .row{
+			grid-template-columns:repeat(1,1fr);
+		}
+		footer{
+			padding:40px 20px;
+		}
+		footer .footerMenu{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			flex-direction:column;
+			margin:20px 0;
+		}
+		footer .footerMenu li a{
+			margin:5px 0;
+		}
+		.title{
+			padding-top:50px;
+		}
+		.mgt60{
+			margin:0;
+		}
+	}
+	@keyframes colorido{
+	  from{background:#040105;color:var(--white);}
+	  to{background:#daf;}
+	}
+	</style>
+</head>
+<body>
+<header>
+	<a href="#" class="logo">My Blog</a>
+	<div class="menuToggle"></div>
+</header>
+<ul class="navigation">
+	<li><a href="#home" onclick="toggleMenu();">Principal
+		</a></li>
+	<li><a href="#about" onclick="toggleMenu();">Nosotros
+		</a></li>
+	<li><a href="#post" onclick="toggleMenu();">poster
+		</a></li>
+	<li><a href="#contact" onclick="toggleMenu();">Contact
+		</a></li>
+</ul>
+<div class="aletarga">
+<section class="banner" id="home">
+	<img src="tec.png" class="cover"/>
+	<div class="contentBx">
+		<h4>Blog de la tecnologia</h4>
+		<h1>A simple Blog Website</h1>
+		<a href="#about" class="btn">about us</a>
+	</div>
+</section>
+</div>
+<div class="aletarga">
+<section class="post" id="post">
+	<div class="title">
+		<h2>Ultimas Posteadas</h2>
+		<p>Soy el muchacho chicho del mericho iztapalapa
+			</p>
+	</div>
+	<div class="contentBx">
+		<div class="postColumn">
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post1.jpg" class="cover"/>
+				</div>
+				<div class="txtBx">
+					<h3>Soy el mero chicho</h3>
+					<a href="#" class="btn">Leer Mas</a>
+				</div>
+			</div>
+			
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post2.png" class="cover"/>
+				</div>
+				<div class="txtBx">
+					<h3>Soy el mero chicho</h3>
+					<a href="#" class="btn">Leer Mas</a>
+				</div>
+			</div>
+			
+			<div class="postBox extraHeight">
+				<div class="imgBx">
+					<img src="post3.png" class="cover"/>
+				</div>
+				<div class="txtBx">
+					<h3>Soy el mero chicho</h3>
+					<a href="#" class="btn">Leer Mas</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="postColumn">
+			<div class="postBox extraHeight">
+				<div class="imgBx">
+					<img src="post4.png" class="cover"/>
+				</div>
+				<div class="txtBx">
+					<h3>Soy el mero chicho</h3>
+					<a href="#" class="btn">Leer Mas</a>
+				</div>
+			</div>
+			
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post5.png" class="cover"/>
+				</div>
+				<div class="txtBx">
+					<h3>Soy el mero chicho</h3>
+					<a href="#" class="btn">Leer Mas</a>
+				</div>
+			</div>
+			
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post6.png" class="cover"/>
+				</div>
+				<div class="txtBx">
+					<h3>Soy el mero chicho</h3>
+					<a href="#" class="btn">Leer Mas</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="postColumn">
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post7.png" class="cover"/>
+				</div>
+				<div class="txtBx">
+					<h3>Soy el mero chicho</h3>
+					<a href="#" class="btn">Leer Mas</a>
+				</div>
+			</div>
+			
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post8.png" class="cover"/>
+				</div>
+				<div class="txtBx">
+					<h3>Soy el mero chicho</h3>
+					<a href="#" class="btn">Leer Mas</a>
+				</div>
+			</div>
+			
+			<div class="postBox extraHeight">
+				<div class="imgBx">
+					<img src="post9.png" class="cover"/>
+				</div>
+				<div class="txtBx">
+					<h3>Soy el mero chicho</h3>
+					<a href="#" class="btn">Leer Mas</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="title">
+		<a href="#" class="btn mgt60">Cargar Mas</a>
+	</div>
+</section>
+</div>
+<div class="aletarga">
+<section class="about" id="about">
+	<div class="title">
+		<h2>Sobre Quienes Escriben esto</h2>
+	</div>
+	<div class="contentBx">
+		<div class="content">
+			<p>Soy el muchacho chicho del mericho iztapalapa Soy el muchacho chicho del mericho iztapalapa Soy el muchacho chicho del mericho iztapalapa Soy el muchacho chicho del mericho iztapalapa Soy el muchacho chicho del mericho iztapalapa Soy el muchacho chicho del mericho iztapalapa Soy el muchacho chicho del mericho iztapalapa Soy el muchacho chicho del mericho iztapalapa Soy el muchacho chicho del mericho iztapalapa Soy el muchacho chicho del mericho iztapalapa Soy el muchacho chicho del mericho iztapalapa Soy el muchacho chicho del mericho iztapalapa Soy el muchacho chicho del mericho iztapalapa Soy el muchacho chicho del mericho iztapalapa Soy el muchacho chicho del mericho iztapalapa Soy el muchacho chicho del mericho iztapalapa Soy el muchacho chicho del mericho iztapalapa Soy el muchacho chicho del mericho iztapalapa Soy el muchacho chicho del mericho iztapalapa
+				</p>
+		</div>
+		<div class="content">
+			<div class="imgBx">
+				<img src="imgYoMerengues.jpg" class="cover"/>
+			</div>
+		</div>
+	</div>
+</section>
+</div>
+<div class="aletarga">
+<section class="contact" id="contact">
+	<div class="title">
+		<h2>Contactanos</h2>
+		<p>Comentarios, Sugerencias del sitio, Sugerencias de contenido...
+			</p>
+	</div>
+	<div class="contactForm">
+		<div class="row">
+			<input type="text" name="" placeholder="Nombre"/>
+		</div>
+		<div class="row">
+			<input type="text" name="" placeholder="email"/>
+		</div>
+		<div class="row2">
+			<textarea placeholder="message"></textarea>
+		</div>
+		<div class="row2">
+			<input type="submit" value="ENVIAR" class="btn"/>
+		</div>
+	</div>
+</section>
+</div>
+<footer>
+<a href="#">My Blog</a>
+<ul class="footerMenu">
+	<li><a href="#home">Principal
+		</a></li>
+	<li><a href="#about">Nosotros
+		</a></li>
+	<li><a href="#post">poster
+		</a></li>
+	<li><a href="#contact">Contact
+		</a></li>
+</ul>	
+<p class="copyrightText">Yo lo hice ;) </p>
+</footer>
+<script src="aletarga.js"></script>
+<script>
+	const menuToggle=document.querySelector('.menuToggle');
+	const navigation=document.querySelector('.navigation');
+	menuToggle.onclick=function(){
+		menuToggle.classList.toggle('active');
+		navigation.classList.toggle('active');
+	}
+	window.addEventListener('scroll',function(){
+		const header=document.querySelector('header');
+		header.classList.toggle('sticky',window.scrollY>0);
+	});
+	function toggleMenu(){
+		menuToggle.classList.remove('active');
+		navigation.classList.remove('active');
+	}
+</script>
+</body>
+</html>

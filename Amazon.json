@@ -1,0 +1,189 @@
+[
+  {
+	"id":1,
+	"imagen":"ama1.jpg",
+	"categoria":"celulares",
+	"bloque":"pcs",
+	"titulo":"Xiaomi Poco X3 Pro",
+	"descripcion":"Xiaomi Poco X3 Pro 6GB/128GB Negro (Ghost Black) Dual SIM",
+	"precio":266,
+	"elTop":23,
+	"url":"https://www.amazon.com.mx/gp/product/B08YJFSHFM/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B08YJFSHFM&linkCode=as2&tag=carrusel23-20&linkId=3e8b2b1e856e23b6cadba4b90daf1701"
+	},
+  {
+	"id":2,
+	"imagen":"ama2.jpg",
+	"categoria":"celulares",
+	"bloque":"pcs",
+	"titulo":"SAMSUNG A12",
+	"descripcion":"SAMSUNG A12 4GB 64GB Azul Desbloqueado",
+	"precio":360,
+	"elTop":12,
+	"url":"https://www.amazon.com.mx/gp/product/B017U1ZFWY/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B017U1ZFWY&linkCode=as2&tag=carrusel23-20&linkId=7b4a7dc90fe8b765aaea32fae28f1c81"
+	},
+  {
+	"id":3,
+	"imagen":"ama8.jpg",
+	"categoria":"relog",
+	"bloque":"sw",
+	"titulo":"HUAWEI Watch Fit- Reloj Inteligente",
+	"descripcion":"Pantalla AMOLED 1.64', 4GB, Bluetooth, Correa de Silicona Negro",
+	"precio":580,
+	"elTop":9,
+	"url":"https://www.amazon.com.mx/gp/product/B08G58CGT9/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B08G58CGT9&linkCode=as2&tag=carrusel23-20&linkId=1a6803c06430b51a80945a024dcc4ffd"
+	},
+  {
+	"id":4,
+	"imagen":"ama14.jpg",
+	"categoria":"relog",
+	"bloque":"sw",
+	"titulo":"Smartwatch Pulsera Inteligente",
+	"descripcion":"Relojes Deportivo Pantalla Táctil Completa de 1.4 Pulgadas,Pulsera Deportiva Bluetooth，para Android y iOS Móvil,reloj deportivo Impermeable IPX7 Pantalla completa táctil monitores de actividad con Pulsómetro y Presión Arterial,Monitor de Calorías, Sueño,Podómetro,Relojes Deportes GPS Monitor de Pasos, Reloj Deportivo Inteligente para Mujeres y Hombres (Azul verde)",
+	"precio":265,
+	"elTop":4,
+	"url":"https://www.amazon.com.mx/gp/product/B08B6CSMW4/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B08B6CSMW4&linkCode=as2&tag=carrusel23-20&linkId=df4518a72dbe7b042a5cd4a4d6874d17"
+	},
+  {
+	"id":5,
+	"imagen":"ama15.jpg",
+	"categoria":"relog",
+	"bloque":"sw",
+	"titulo":"Smartwatch Reloj Inteligente,Salandens 1.72' ",
+	"descripcion":"Hombre-Mujer reloges Inteligente, Pantalla Táctil Completa Impermeable IP68, Con Pulsómetro y Presión Arterial, Monitor de Calorías,Sueño,Podómetro,Relojes Deportes GPS Monitor de Pasos,Notificaciones Inteligentes, Banda Inteligente para Hombres, Mujeres Compatible con IOS, Android.",
+	"precio":750,
+	"elTop":87,
+	"url":"https://www.amazon.com.mx/gp/product/B09HHCC944/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B09HHCC944&linkCode=as2&tag=carrusel23-20&linkId=c78a258d5ba5b267a0575c505e39a59c"
+	},
+  {
+	"id":6,
+	"imagen":"ama13.jpg",
+	"categoria":"computacion",
+	"bloque":"pcs",
+	"titulo":"2021 Dell Inspiron 15.6' ",
+	"descripcion":"FHD Touchscreen Laptop, AMD Ryzen 5-3450U, 8GB RAM Memory, 256GB PCIe SSD, AMD Radeon Vega 8 Graphics, Webcam, Bluetooth, Wi-Fi, HDMI, Windows 10 in S Mode",
+	"precio":653,
+	"elTop":11,
+	"url":"https://www.amazon.com.mx/gp/product/B094L3BYRP/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B094L3BYRP&linkCode=as2&tag=carrusel23-20&linkId=3b43f3b9a66b714abca80ad06e200924"
+	},
+  {
+	"id":7,
+	"imagen":"ama3.jpg",
+	"categoria":"computacion",
+	"bloque":"peri",
+	"titulo":"Pebble M350",
+	"descripcion":"Pebble M350 Mouse Inalámbrico Bluetooth - Rosa",
+	"precio":421,
+	"elTop":3,
+	"url":"https://www.amazon.com.mx/gp/product/B07X5GHZYJ/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07X5GHZYJ&linkCode=as2&tag=carrusel23-20&linkId=dba3695fa27e9dcb97e44c018b61ceb6"
+	},
+  {
+	"id":8,
+	"imagen":"ama4.jpg",
+	"categoria":"computacion",
+	"bloque":"peri",
+	"titulo":"Kit Teclado y Mouse LOGITECH",
+	"descripcion":"Kit Teclado + Mouse LOGITECH INALAMBRICO Bluetooth K380, M350",
+	"precio":999,
+	"elTop":67,
+	"url":"https://www.amazon.com.mx/gp/product/B09GBQC5KG/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B09GBQC5KG&linkCode=as2&tag=carrusel23-20&linkId=422116e4c41259e20dcec83bc818e904"
+	},
+  {
+	"id":9,
+	"imagen":"ama5.jpg",
+	"categoria":"computacion",
+	"bloque":"peri",
+	"titulo":"Logitech Mouse Inalámbrico",
+	"descripcion":"Logitech M185 Mouse Inalámbrico Ambidiestro Negro",
+	"precio":980,
+	"elTop":2,
+	"url":"https://www.amazon.com.mx/gp/product/B004YAVF8I/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B004YAVF8I&linkCode=as2&tag=carrusel23-20&linkId=6f95499695c7e16933ac6d16006f484a"
+	},
+  {
+	"id":10,
+	"imagen":"ama6.jpg",
+	"categoria":"audifonos",
+	"bloque":"audio",
+	"titulo":"Apple EarPods",
+	"descripcion":"Apple EarPods con Conector Lightning",
+	"precio":213,
+	"elTop":15,
+	"url":"https://www.amazon.com.mx/gp/product/B01M0GB8CC/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01M0GB8CC&linkCode=as2&tag=carrusel23-20&linkId=d397f18a41f936092783ed74aa894a2f"
+	},
+  {
+	"id":11,
+	"imagen":"ama7.jpg",
+	"categoria":"audifonos",
+	"bloque":"audio",
+	"titulo":"Apple AirPods Tercera generación",
+	"descripcion":"Apple Nuevos AirPods (Tercera generación)",
+	"precio":40105,
+	"elTop":78,
+	"url":"https://www.amazon.com.mx/gp/product/B09JQL3NWT/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B09JQL3NWT&linkCode=as2&tag=carrusel23-20&linkId=ed42f729e6289d506d1c590266f0f834"
+	},
+  {
+	"id":12,
+	"imagen":"ama16.jpg",
+	"categoria":"audifonos",
+	"bloque":"audio",
+	"titulo":"Jecoo Audífonos Inalámbricos Bluetooth 5.0",
+	"descripcion":"Auriculares inalámbricos Impermerable con Micrófono de Reducción de Ruido Mini Audífonos Deportivos para iPhone Android",
+	"precio":415,
+	"elTop":66,
+	"url":"https://www.amazon.com.mx/gp/product/B096VB1LVW/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B096VB1LVW&linkCode=as2&tag=carrusel23-20&linkId=39ee055ff6a2a4875cbc456342e25126"
+	},
+  {
+	"id":13,
+	"imagen":"ama17.jpg",
+	"categoria":"audifonos",
+	"bloque":"audio",
+	"titulo":"Audífonos inalámbricos Bluetooth 5.0",
+	"descripcion":"Auriculares Impermeables Deportivos Sonido Estéreo HiFi Reducción de Ruido, Micrófono Incorporado con Estuche de Carga 3300mAh Control táctil, Reproducción de 6 Horas para iPhone y Android Ideal para Regalo",
+	"precio":145,
+	"elTop":50,
+	"url":"https://www.amazon.com.mx/gp/product/B08JV5412N/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B08JV5412N&linkCode=as2&tag=carrusel23-20&linkId=3f2547ab17b679d2511bc76793521feb"
+	},
+  {
+	"id":14,
+	"imagen":"ama9.jpg",
+	"categoria":"audifonos",
+	"bloque":"audio",
+	"titulo":"Apple AirPods",
+	"descripcion":"Apple AirPods con Estuche de Carga",
+	"precio":123,
+	"elTop":33,
+	"url":"https://www.amazon.com.mx/gp/product/B07RK58K76/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07RK58K76&linkCode=as2&tag=carrusel23-20&linkId=7d042a2edcfb995ba5038c4277979211"
+	},
+  {
+	"id":15,
+	"imagen":"ama10.jpg",
+	"categoria":"bocinas",
+	"bloque":"audio",
+	"titulo":"Bocinas Bluetooth Alexa",
+	"descripcion":"Bocinas Bluetooth, con 24 horas de reproducción, emparejamiento inalámbrico, asistente de voz, micrófono integrado",
+	"precio":59,
+	"elTop":5,
+	"url":"https://www.amazon.com.mx/gp/product/B07Y8H8STR/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07Y8H8STR&linkCode=as2&tag=carrusel23-20&linkId=5738a30924f66bdc624f2baaf83826aa"
+	},
+  {
+	"id":16,
+	"imagen":"ama11.jpg",
+	"categoria":"bocinas",
+	"bloque":"audio",
+	"titulo":"Tronsmart Force Bocinas Bluetooth",
+	"descripcion":"Bocinas resistentes al agua sonido estéreo de 40 W, altavoz inalámbrico, 15 horas de reproducción, alcance de 30 m",
+	"precio":123,
+	"elTop":16,
+	"url":"https://www.amazon.com.mx/gp/product/B07MGSWD1F/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07MGSWD1F&linkCode=as2&tag=carrusel23-20&linkId=3309c2d750bf1ce55bb1a0adf650cdfd"	
+	},
+  {
+	"id":17,
+	"imagen":"ama12.jpg",
+	"categoria":"bocinas",
+	"bloque":"audio",
+	"titulo":"JBL Flip 5 Bocinas",
+	"descripcion":"JBL Flip 5 Altavoz Bluetooth portátil Impermeable, Negro",
+	"precio":333.33,
+	"elTop":25,
+	"url":"https://www.amazon.com.mx/gp/product/B07QK2SPP7/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07QK2SPP7&linkCode=as2&tag=carrusel23-20&linkId=dddc06ec803a92fc221f17e8baa2ad5a"
+  }
+]

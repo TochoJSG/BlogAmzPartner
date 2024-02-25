@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Smarthphone | Celulares</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <link rel="shortcut icon|apple-touch-icon|apple-touch-icon-precomposed" href="favicon.ico" sizes="HeightxWidth|any" type="image/x-icon"/>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<link href="estiloBlog.css" rel="stylesheet" type="text/css"/>
+</head>
+<body id="tipo-producto" data-depto="articulo">
+<header>
+	<a href="#" class="logo">Electronica Inteligente</a>
+	<div class="menuToggle"></div>
+</header>
+<ul class="navigation">
+	<li><a data-text="Portada" href="index.html" onclick="toggleMenu();">Principal
+		</a></li>
+	<li><a data-text="Quien escribe esto" href="index.html#about" onclick="toggleMenu();">Nosotros
+		</a></li>
+	<li><a data-text="Publicaciones" href="#post" onclick="toggleMenu();">poster
+		</a></li>
+	<li><a data-text="Contacto" href="index.html#contact" onclick="toggleMenu();">Contact
+		</a></li>
+</ul>
+<a href="https://api.whatsapp.com/send/?phone=525610936170&text=Gracias%20por%20escribir%20a%20materias%20primas%20tocha,%20%C2%BFcomo%20te%20podemos%20ayudar?"
+class="btn-wsp" target="_blank"><img src="whats.png"/></a>
+<div class="dropdownMenu" onmouseover="drop()">
+	<div class="toggleMenu">
+		<span></span></div>
+	<ul id="mn">
+		</ul>
+</div>
+<section>
+<div class="articulo">
+	<div class="title"><h1>Smathphones Celulares
+		</h1></div>
+	<p>Los celulares actualemente son computadoras super portatiles, indeispensables, por lo que decirdir cual comprar no es cualquier cosa.
+		</p>
+	<div class="contenido">
+	<div>
+		<h2>Smathphones Celulares
+			</h2>
+	<p>Cuida antes que todo la version del SO (ver en tecnisismos), pues de esto dependera que puedas usar muchas aplicaciones recientes, el principal conficto es con las aplicaciones bancarias que solo son compatibles con lo ultimo de Andorid y iOS; luego fijate la RAM, pues de esta dependera la rapidez de tu telefono o que se pasme cuando usas aplicaciones o navegas, feo que se pasme; Luego la otra memoria, SSD con capacidad arriba de 8gb o que tenga chance de expandir con <a target="_blank" hef="almacenamiento-Externo.html">SD</a>. Los ultimos celulares ya traen un estandar alto en cuanto a la resolucion de camara, pantalla, bateria y otras cosas basicas, asi que solo busca algo extraordinario si  crees necesitartlo, puedes tener confianza en que un aparato reciente tendra camara decente, y buena resolucion, de hecho ya todos los celulares son grandes de pantalla.
+		</p>
+	<img src="celulares.png"/>
+	</div>
+	<div>
+		<ul>Ventajas
+			<li>Controlan todo, hacen de todo.</li>
+			<li>Puedes codificar un programa con uno, solo debes instalar un IDE, asi de cheveres son.</li>
+			<li>La competencia constante entre compañias elevo los estandares, es decir, aunque compres un dispositivo economico no sera obsoleto para las necesidades comunes, si necesitas una super camara o algo mas super pues hay que invertirle.</li>
+		</ul>
+		<ul>Desventajas
+			<li>Desempeño proporcional a la inversion, motorola, lenovo, samsung no decepcionan.</li>
+			<li>La competencia y el marketing hacen que invertir en uno muy caro sea mala idea, pues en unos meses tu inverson se devalua horriblemente, compra inteligente, buenas marcas como motorola y samsung tienen excelengtes productos de gama accesible.</li>
+		</ul>
+	</div>
+	<div class="pcs">
+		</div>
+<h3>A continuacion una Seleccion, de Productos recomendados por su Calidad, filtralos por:
+	</h3>
+<div class="filtros">
+	<div>
+		<div class="btnAnimaLuz">
+		<div class="contentTip">
+		<h2>Orden por Precio
+			</h2>
+		<p>Listado de productos ordenados por precio, del mas barato al mas caro.
+			</p>
+		</div>
+		<button id="ba" onclick="a();"><span>Precio
+			</span></button>
+		</div>
+	</div>
+	<div>
+		<div class="btnAnimaLuz">
+		<div class="contentTip">
+		<h2>Orden por Opiniones
+			</h2>
+		<p>Listado filtrado por promedio de opiniones, sin tomar en cuenta precio o caracteristicas, solo si agrado a los compradores.
+			</p>
+	</div>
+		<button id="bb" onclick="b();"><span>Opiniones Positivas
+			</span></button>
+		</div>
+	</div>
+	<div>
+		<div id="bc" class="btnAnimaLuz">
+		<div class="contentTip">
+		<h2>Las mejores Caracteristicas
+			</h2>
+		<p>Es un listado de productos con Caracteristicas geniales, no se considero el precio como caracteristica.
+			</p>
+		</div>
+		<button onclick="c();"><span style="font-size:.8em;">Mejores Caracteristicas
+			</span></button>
+		</div>
+	</div>
+</div>
+<div id="a">
+	<div id="items"></div>
+</div>
+<div id="b">
+	<div id="items"></div>
+</div>
+<div id="c">
+	<div id="items"></div>
+</div>
+</div>
+</section>
+<div class="aletarga">
+<!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div id="carr" class="swiper-wrapper">
+		</div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	
+</div>
+<div class="aletarga">
+<section class="post" id="post">
+	<div class="title">
+		<h2>Posteadas</h2>
+		<p><span>Computadora, laptop, audifonos bluetooth, reloj inteligente, smartwatch, mouse, relojes, bocinas... y mas.</span> Un post por cada uno.
+			</p>
+	</div>
+	<div class="contentBx">
+		<div class="postColumn">
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post3.png" class="cover"/>
+				</div>
+				<div class="txtBx">
+					<h3>Bocinas</h3>
+					<a href="mejores_bocinas_fiesteras.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+			<div class="postBox extraHeight">
+				<div class="imgBx">
+					<img src="post4.png"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Laptops</h3>
+					<a href="mejores_laptop.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post8.png"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Computadora</h3>
+					<a href="computadora.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="postColumn">
+			<div class="postBox extraHeight">
+				<div class="imgBx">
+					<img src="post2.jpg"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Kits Mouse + Teclado</h3>
+					<a href="kits_mouse_teclado.html" class="btn">Ver Mas</a>
+				</div>
+			</div> 
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post5.png" class="cover"/>
+				</div>
+				<div class="txtBx">
+					<h3>Audifonos orejera</h3>
+					<a href="audifonos_orejera.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post6.png"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Audifonos Cable</h3>
+					<a href="audifonos_cable.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="postColumn">
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post9.png"><!--class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Smartwatch Relojes Inteligentes</h3>
+					<a href="reloj_inteligente_smartwatch.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="cel.png"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Smartphone Celulares</h3>
+					<a href="smarthphones.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+			<div class="postBox extraHeight">
+				<div class="imgBx">
+					<img src="post1.png"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Almacenamiento Externo</h3>
+					<a href="almacenamiento_externo.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="title">
+		<button id="dM" class="btn mgt60" onclick="ver();">Cargar Mas</button>
+	</div>
+	
+	<div id="desplegarMas">
+	<div class="contentBx">
+		<div class="postColumn">
+			<div class="postBox extraHeight">
+				<div class="imgBx">
+					<img src="ama9.jpg" class="cover"/>
+				</div>
+				<div class="txtBx">
+					<h3>Audifonos Bluetooth</h3>
+					<a href="audifonos_bluetooth.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="postBB.png"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Bocinas Bluetooth</h3>
+					<a href="mejores_bocinas_bluetooth.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+		</div>
+		<div class="postColumn">
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="postMC.png"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Mouse de Computadora</h3>
+					<a href="mouse_computadora.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="postTC.png"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Teclado de Computadora</h3>
+					<a href="teclado_computadora.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+		</div>
+		<div class="postColumn">
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="postVe.png"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Ventiladores de Computadora</h3>
+					<a href="ventiladores_computadora.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+			<div class="postBox extraHeight">
+				<div class="imgBx">
+					<img src="postSi.png"<!--class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Sillas Gaming</h3>
+					<a href="sillas_gaming.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	</div>
+</section>
+</div>
+<template id="template-bloque">
+	<tr style="height:auto;">
+		<th scope="row"></th>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</template>
+<footer>
+<a href="index.html">Electronica Inteligente</a>
+<ul class="footerMenu">
+	<li><a href="index.html">Principal
+		</a></li>
+	<li><a href="index.html #about">Nosotros
+		</a></li>
+	<li><a href="index.html #post">poster
+		</a></li>
+	<li><a href="index.html #contact">Contacto
+		</a></li>
+</ul>	
+<a href="https://admingtutoriales.com">
+<p class="copyrightText">ADMING DESARROLLOS</p></a>
+</footer>
+<script src="aletarga.js"></script><!--Efecto Lazy-->
+<script src="menuToggle.js"></script><!--Header-->
+<script src="carrAmz.js"></script>
+<script src="collapsible.js"></script><!--En productos-->
+<script src="indexJS.js"></script><!--Script Carr Gral-->
+<script src="dropdownMenu.js"></script><!--MenuDesplegable-->
+<script src="DesplegarMas.js"></script><!--Bloques Productos, Mas blogs-->
+
+<script src="pcs.js"></script>
+</body>
+</html>

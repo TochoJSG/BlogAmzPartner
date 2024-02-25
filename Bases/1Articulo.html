@@ -1,0 +1,599 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Articulo X</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<link href="estiloBlog.css" rel="stylesheet" type="text/css"/>
+</head>
+<body id="tipo-producto" data-depto="bocinas"><!--Ejemplo Cate=Bocinas-->
+<header>
+	<a href="#" class="logo">Electronica Inteligente</a>
+	<div class="menuToggle"></div>
+</header>
+<ul class="navigation">
+	<li><a data-text="Portada" href="index.html" onclick="toggleMenu();">Principal
+		</a></li>
+	<li><a data-text="Quien escribe esto" href="#about" onclick="toggleMenu();">Nosotros
+		</a></li>
+	<li><a data-text="Publicaciones" href="#post" onclick="toggleMenu();">poster
+		</a></li>
+	<li><a data-text="Contacto" href="#contact" onclick="toggleMenu();">Contact
+		</a></li>
+</ul>
+<section>
+<div class="articulo">
+	<div class="title"><h1>Dispositivo Tecnologico
+		</h1></div>
+	<p>Los reloges dan la hora y mucho mas
+		</p>
+	<div class="contenido">
+	<div>
+		<h2>Reloges
+			</h2>
+	<p>Los reloges te hacen ver chipocludo
+		</p>
+	</div>
+	<div>
+		<ul>Ventajas
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+		<ul>Desventajas
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+	</div>
+	<div>
+		<h2>Comprende sus Tecnisismos</h2>
+		<button class="collapsible">TecnisismoA</button>
+		<div class="contentCola"><p>bla bla bla</p></div>
+		<button class="collapsible">TecnisismoB</button>
+		<div class="contentCola"><p>bla bla bla</p></div>
+		<button class="collapsible">TecnisismoC</button>
+		<div class="contentCola"><p>bla bla bla</p></div>
+		<button class="collapsible">TecnisismoD</button>
+		<div class="contentCola"><p>bla bla bla</p></div>
+		<button class="collapsible">TecnisismoE</button>
+		<div class="contentCola"><p>bla bla bla</p></div>
+	</div>
+	</div>
+<h3>A continuacion una Seleccion, de Productos recomendados por su Calidad, filtralos por:
+	</h3>
+<div class="filtros">
+	<div>
+		<div class="btnAnimaLuz">
+		<button id="ba" onclick="a();"><span>Precio
+			</span></button>
+		</div>
+	</div>
+	<div>
+		<div class="btnAnimaLuz">
+		<button id="bb" onclick="b();"><span>Opiniones Positivas
+			</span></button>
+		</div>
+	</div>
+	<div>
+		<div id="bc" class="btnAnimaLuz">
+		<button onclick="c();"><span style="font-size:.8em;">Mejores Caracteristicas
+			</span></button>
+		</div>
+	</div>
+</div>
+<div id="a">
+	<div id="items"></div>
+</div>
+<div id="b">
+	<div id="items"></div>
+</div>
+<div id="c">
+	<div id="items"></div>
+</div>
+</div>
+</section>
+<div class="aletarga">
+<section>
+<!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+			<div class="prodCarAmz">
+			<picture>
+				<img src="ama1.jpg" alt="loading..."/>
+			</picture>
+			<div class="detailsCarrAmz">
+				<p>
+					<b>Xiaomi Poco X3 Pro</b>
+				</p>
+			</div>
+			<div class="buttonCarrAmz">
+				<a class="btn_amz" target="_blank" href="https://www.amazon.com.mx/gp/product/B08YJFSHFM/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B08YJFSHFM&linkCode=as2&tag=carrusel23-20&linkId=3e8b2b1e856e23b6cadba4b90daf1701">Comprar en Amazon
+					</a>
+			</div>
+			</div>
+        </div>
+        <div class="swiper-slide">
+ 			<div class="prodCarAmz">
+			<picture>
+				<img src="ama2.jpg" alt="loading..."/>
+			</picture>
+			<div class="detailsCarrAmz">
+				<p>
+					<b>SAMSUNG A12</b>
+				</p>
+			</div>
+			<div class="buttonCarrAmz">
+				<a class="btn_amz" target="_blank" href="https://www.amazon.com.mx/gp/product/B017U1ZFWY/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B017U1ZFWY&linkCode=as2&tag=carrusel23-20&linkId=7b4a7dc90fe8b765aaea32fae28f1c81">Comprar en Amazon</a>
+			</div>
+			</div>
+        </div>
+        <div class="swiper-slide">
+			<div class="prodCarAmz">
+			<picture>
+				<img src="ama8.jpg" alt="loading..."/>
+			</picture>
+			<div class="detailsCarrAmz">
+				<p>
+					<b>HUAWEI WatchFit-Reloj Inteligente</b>
+				</p>
+			</div>
+			<div class="buttonCarrAmz">
+				<a class="btn_amz" target="_blank" href="https://www.amazon.com.mx/gp/product/B08G58CGT9/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B08G58CGT9&linkCode=as2&tag=carrusel23-20&linkId=1a6803c06430b51a80945a024dcc4ffd">Comprar en Amazon
+					</a>
+			</div>
+			</div>
+        </div>
+        <div class="swiper-slide">
+			<div class="prodCarAmz">
+			<picture>
+				<img src="ama3.jpg" alt="loading..."/>
+			</picture>
+			<div class="detailsCarrAmz">
+				<p>
+					<b>Pebble M350</b>
+				</p>
+			</div>
+			<div class="buttonCarrAmz">
+				<a class="btn_amz" target="_blank" href="https://www.amazon.com.mx/gp/product/B07X5GHZYJ/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07X5GHZYJ&linkCode=as2&tag=carrusel23-20&linkId=dba3695fa27e9dcb97e44c018b61ceb6">Comprar en Amazon
+					</a>
+			</div>
+			</div>
+        </div>
+        <div class="swiper-slide">
+			<div class="prodCarAmz">
+			<picture>
+				<img src="ama4.jpg" alt="loading..."/>
+			</picture>
+			<div class="detailsCarrAmz">
+				<p>
+					<b>Kit Teclado y Mouse LOGITECH</b>
+				</p>
+			</div>
+			<div class="buttonCarrAmz">
+				<a class="btn_amz" target="_blank" href="https://www.amazon.com.mx/gp/product/B09GBQC5KG/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B09GBQC5KG&linkCode=as2&tag=carrusel23-20&linkId=422116e4c41259e20dcec83bc818e904">Comprar en Amazon
+						</a>
+			</div>
+			</div>
+        </div>
+        <div class="swiper-slide">
+			<div class="prodCarAmz">
+			<picture>
+				<img src="ama5.jpg" alt="loading..."/>
+			</picture>
+			<div class="detailsCarrAmz">
+				<p>
+					<b>Logitech Mouse Inalámbrico</b>
+				</p>
+			</div>
+			<div class="buttonCarrAmz">
+				<a class="btn_amz" target="_blank" href="https://www.amazon.com.mx/gp/product/B004YAVF8I/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B004YAVF8I&linkCode=as2&tag=carrusel23-20&linkId=6f95499695c7e16933ac6d16006f484a">Comprar en Amazon
+					</a>
+			</div>
+			</div>
+        </div>
+        <div class="swiper-slide">
+			<div class="prodCarAmz">
+			<picture>
+				<img src="ama6.jpg" alt="loading..."/>
+			</picture>
+			<div class="detailsCarrAmz">
+				<p>
+					<b>Apple EarPods</b>
+				</p>
+			</div>
+			<div class="buttonCarrAmz">
+				<a class="btn_amz" target="_blank" href="https://www.amazon.com.mx/gp/product/B01M0GB8CC/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01M0GB8CC&linkCode=as2&tag=carrusel23-20&linkId=d397f18a41f936092783ed74aa894a2f">Comprar en Amazon
+					</a>
+			</div>
+			</div>
+        </div>
+        <div class="swiper-slide">
+			<div class="prodCarAmz">
+			<picture>
+				<img src="ama7.jpg" alt="loading..."/>
+			</picture>
+			<div class="detailsCarrAmz">
+				<p>
+					<b>Apple AirPods Tercera generación</b>
+				</p>
+			</div>
+			<div class="buttonCarrAmz">
+				<a class="btn_amz" target="_blank" href="https://www.amazon.com.mx/gp/product/B09JQL3NWT/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B09JQL3NWT&linkCode=as2&tag=carrusel23-20&linkId=ed42f729e6289d506d1c590266f0f834">Comprar en Amazon
+					</a>
+			</div>
+			</div>
+        </div>
+        <div class="swiper-slide">
+			<div class="prodCarAmz">
+			<picture>
+				<img src="ama9.jpg" alt="loading..."/>
+			</picture>
+			<div class="detailsCarrAmz">
+				<p>
+					<b>Apple AirPods</b>
+				</p>
+			</div>
+			<div class="buttonCarrAmz">
+				<a class="btn_amz" target="_blank" href="https://www.amazon.com.mx/gp/product/B07RK58K76/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07RK58K76&linkCode=as2&tag=carrusel23-20&linkId=7d042a2edcfb995ba5038c4277979211">Comprar en Amazon
+					</a>
+			</div>
+			</div>
+        </div>
+		<div class="swiper-slide">
+			<div class="prodCarAmz">
+			<picture>
+				<img src="ama10.jpg" alt="loading..."/>
+			</picture>
+			<div class="detailsCarrAmz">
+				<p>
+					<b>Bocinas Bluetooth Alexa</b>
+				</p>
+			</div>
+			<div class="buttonCarrAmz">
+				<a class="btn_amz" target="_blank" href="https://www.amazon.com.mx/gp/product/B07Y8H8STR/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07Y8H8STR&linkCode=as2&tag=carrusel23-20&linkId=5738a30924f66bdc624f2baaf83826aa">Comprar en Amazon
+					</a>
+			</div>
+			</div>
+        </div>
+		<div class="swiper-slide">
+			<div class="prodCarAmz">
+			<picture>
+				<img src="ama11.jpg" alt="loading..."/>
+			</picture>
+			<div class="detailsCarrAmz">
+				<p>
+					<b>Tronsmart Force Bocinas Bluetooth</b>
+				</p>
+			</div>
+			<div class="buttonCarrAmz">
+				<a class="btn_amz" target="_blank" href="https://www.amazon.com.mx/gp/product/B07MGSWD1F/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07MGSWD1F&linkCode=as2&tag=carrusel23-20&linkId=3309c2d750bf1ce55bb1a0adf650cdfd">Comprar en Amazon	
+					</a>
+			</div>
+			</div>
+        </div>
+		<div class="swiper-slide">
+			<div class="prodCarAmz">
+			<picture>
+				<img src="ama12.jpg" alt="loading..."/>
+			</picture>
+			<div class="detailsCarrAmz">
+				<p>
+					<b>JBL Flip 5 Bocinas</b>
+				</p>
+			</div>
+			<div class="buttonCarrAmz">
+				<a class="btn_amz" target="_blank" href="https://www.amazon.com.mx/gp/product/B07QK2SPP7/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07QK2SPP7&linkCode=as2&tag=carrusel23-20&linkId=dddc06ec803a92fc221f17e8baa2ad5a">Comprar en Amazon	
+					</a>
+			</div>
+			</div>
+        </div>
+		<div class="swiper-slide">
+			<div class="prodCarAmz">
+			<picture>
+				<img src="ama13.jpg" alt="loading..."/>
+			</picture>
+			<div class="detailsCarrAmz">
+				<p>
+					<b>2021 Dell Inspiron 15.6"</b>
+				</p>
+			</div>
+			<div class="buttonCarrAmz">
+			<a class="btn_amz" target="_blank" href="https://www.amazon.com.mx/gp/product/B094L3BYRP/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B094L3BYRP&linkCode=as2&tag=carrusel23-20&linkId=3b43f3b9a66b714abca80ad06e200924">Comprar en Amazon
+				</a>	
+			</div>
+			</div>
+        </div>
+		<div class="swiper-slide">
+			<div class="prodCarAmz">
+			<picture>
+				<img src="ama14.jpg" alt="loading..."/>
+			</picture>
+			<div class="detailsCarrAmz">
+				<p>
+					<b>Smartwatch Pulsera Inteligente</b>
+				</p>
+			</div>
+			<div class="buttonCarrAmz">
+			<a class="btn_amz" target="_blank" href="https://www.amazon.com.mx/gp/product/B08B6CSMW4/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B08B6CSMW4&linkCode=as2&tag=carrusel23-20&linkId=df4518a72dbe7b042a5cd4a4d6874d17">Comprar en Amazon
+				</a>	
+			</div>
+			</div>
+        </div>
+		<div class="swiper-slide">
+			<div class="prodCarAmz">
+			<picture>
+				<img src="ama15.jpg" alt="loading..."/>
+			</picture>
+			<div class="detailsCarrAmz">
+				<p>
+					<b>Smartwatch Reloj Inteligente,Salandens 1.72"</b>
+				</p>
+			</div>
+			<div class="buttonCarrAmz">
+			<a class="btn_amz" target="_blank" href="https://www.amazon.com.mx/gp/product/B09HHCC944/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B09HHCC944&linkCode=as2&tag=carrusel23-20&linkId=c78a258d5ba5b267a0575c505e39a59c">Comprar en Amazon
+				</a>	
+			</div>
+			</div>
+        </div>
+		<div class="swiper-slide">
+			<div class="prodCarAmz">
+			<picture>
+				<img src="ama16.jpg" alt="loading..."/>
+			</picture>
+			<div class="detailsCarrAmz">
+				<p>
+					<b>Jecoo Audífonos Inalámbricos Bluetooth 5.0</b>
+				</p>
+			</div>
+			<div class="buttonCarrAmz">
+			<a class="btn_amz" target="_blank" href="https://www.amazon.com.mx/gp/product/B096VB1LVW/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B096VB1LVW&linkCode=as2&tag=carrusel23-20&linkId=39ee055ff6a2a4875cbc456342e25126">Comprar en Amazon
+				</a>
+			</div>
+			</div>
+        </div>
+		<div class="swiper-slide">
+			<div class="prodCarAmz">
+			<picture>
+				<img src="ama17.jpg" alt="loading..."/>
+			</picture>
+			<div class="detailsCarrAmz">
+				<p>
+					<b>Audífonos inalámbricos Bluetooth 5.0</b>
+				</p>
+			</div>
+			<div class="buttonCarrAmz">
+			<a class="btn_amz" target="_blank" href="https://www.amazon.com.mx/gp/product/B08JV5412N/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B08JV5412N&linkCode=as2&tag=carrusel23-20&linkId=3f2547ab17b679d2511bc76793521feb">Comprar en Amazon
+				</a>
+			</div>
+			</div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+		loop:true,
+      });
+    </script>
+</section>
+</div>
+<div class="aletarga">
+<section class="post" id="post">
+	<div class="title">
+		<h2>Posteadas</h2>
+	</div>
+	<div class="contentBx">
+		<div class="postColumn">
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post3.png" class="cover"/>
+				</div>
+				<div class="txtBx">
+					<h3>Bocinas</h3>
+					<a href="mejores-bocinas-fiesteras.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+			<div class="postBox ">
+				<div class="imgBx">
+					<img src="post4.png"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Laptops</h3>
+					<a href="mejores-laptop.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post8.png"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Computadora</h3>
+					<a href="mejores-computadora.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="postColumn">
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post2.jpg"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Kits Mouse + Teclado</h3>
+					<a href="kits-mouse-teclado.html" class="btn">Ver Mas</a>
+				</div>
+			</div> 
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post5.png" class="cover"/>
+				</div>
+				<div class="txtBx">
+					<h3>Audifonos orejera</h3>
+					<a href="audifonos-orejera.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post6.png"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Audifonos Cable</h3>
+					<a href="audifonos-cable.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="postColumn">
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post9.png"><!--class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Smartwatch Relojes Inteligentes</h3>
+					<a href="relog-Inteligente-Smartwatch.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="cel.png"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Smartphone Celulares</h3>
+					<a href="Smarthphones-celulares.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post1.png"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Almacenamiento Externo</h3>
+					<a href="almacenamiento-Externo.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="title">
+		<button id="dM" class="btn mgt60" onclick="ver();">Cargar Mas</button>
+	</div>
+	
+	<div id="desplegarMas">
+	<div class="contentBx">
+		<div class="postColumn">
+			<div class="postBox ">
+				<div class="imgBx">
+					<img src="post4.png"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Audifonos Bluetooth</h3>
+					<a href="audifonos-bluetooth.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post8.png"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Bocinas Bluetooth</h3>
+					<a href="mejores-bocinas-bluetooth.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+		</div>
+		<div class="postColumn">
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post5.png" class="cover"/>
+				</div>
+				<div class="txtBx">
+					<h3>Mouse de Computadora</h3>
+					<a href="mouse-computadora.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post6.png"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Teclado de Computadora</h3>
+					<a href="teclado-computadora.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+		</div>
+		<div class="postColumn">
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="cel.png"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Ventiladores de Computadora</h3>
+					<a href="ventiladores-computadora.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+			<div class="postBox">
+				<div class="imgBx">
+					<img src="post1.png"><!-- class="cover"/>-->
+				</div>
+				<div class="txtBx">
+					<h3>Sillas Gaming</h3>
+					<a href="sillas-gaming.html" class="btn">Ver Mas</a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	</div>
+</section>
+</div>
+<template id="template-bloque">
+	<tr style="height:auto;">
+		<th scope="row"></th>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</template>
+<footer>
+<a href="index.html">Electronica Inteligente</a>
+<ul class="footerMenu">
+	<li><a href="index.html">Principal
+		</a></li>
+	<li><a href="index.html #about">Nosotros
+		</a></li>
+	<li><a href="index.html #post">poster
+		</a></li>
+	<li><a href="index.html #contact">Contacto
+		</a></li>
+</ul>	
+<a href="https://admingtutoriales.com">
+<p class="copyrightText">ADMING DESARROLLOS</p></a>
+</footer>
+<script src="aletarga.js"></script>
+<script src="menuToggle.js"></script>
+<script src="collapsible.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

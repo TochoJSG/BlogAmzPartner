@@ -1,0 +1,77 @@
+[
+  {
+	"imagen":"post3.png",
+	"titulo":"Bocinas",
+	"url":"mejores-bocinas-fiesteras.html"
+	},
+  {
+	"imagen":"post4.png",
+	"titulo":"Laptops",
+	"url":"mejores-laptop.html"
+	},
+  {
+	"imagen":"post8.png",
+	"titulo":"Computadora",
+	"url":"mejores-computadora.html"
+	},
+  {
+	"imagen":"post2.png",
+	"titulo":"Kits Mouse + Teclado",
+	"url":"kits-mouse-teclado.html"
+	},
+  {
+	"imagen":"post5.png",
+	"titulo":"Audifonos orejera",
+	"url":"audifonos-orejera.html",
+	}
+  {
+	"imagen":"post6.png",
+	"titulo":"Audifonos Cable",
+	"url":"audifonos-cable.html"
+	},
+  {
+	"imagen":"post9.png",
+	"titulo":"Smartwatch Relojes Inteligentes",
+	"url":"relog-Inteligente-Smartwatch.html"
+	},
+  {
+	"imagen":"cel.png",
+	"titulo":"Smartphone Celulares",
+	"url":"Smarthphones-celulares.html"
+	},
+  {
+	"imagen":"post1.png",
+	"titulo":"Almacenamiento Externo",
+	"url":"almacenamiento-Externo.html"
+	},
+  {
+	"imagen":"post4.png",
+	"titulo":"Audifonos Bluetooth",
+	"url":"audifonos-bluetooth.html"
+	},
+  {
+	"imagen":"postBB.png",
+	"titulo":"Bocinas Bluetooth",
+	"url":"mejores-bocinas-bluetooth.html"
+	},
+  {
+	"imagen":"postMC.png",
+	"titulo":"Mouse de Computadora",
+	"url":"mouse-computadora.html"
+	},
+  {
+	"imagen":"postTC.png",
+	"titulo":"Teclado de Computadora",
+	"url":"teclado-computadora.html"
+	},
+  {
+	"imagen":"postVe.png",
+	"titulo":"Ventiladores de Computadora",
+	"url":"ventiladores-computadora.html"
+	},
+  {
+	"imagen":"postSi.png",
+	"titulo":"Sillas Gaming",
+	"url":"sillas-gaming.html"
+	}
+]
